@@ -1,0 +1,87 @@
+---
+title: "Discretion Mapping"
+subtitle: ""
+author: "Martin Gleason, MS"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+output:
+  xaringan::moon_reader:
+    css: ["libs/remark-css/default.css", "pro_presentation.css"]
+    self_contained: no
+    lib_dir: libs
+    seal: false
+    nature:
+      beforeInit: "macros.js"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+```{r, packages, include= TRUE, echo = FALSE, message = FALSE, error = FALSE, warning=FALSE}
+library("showtext")
+library("sysfonts")
+library("tidyverse")
+library("lubridate")
+library("showtext")
+
+
+font_add_google(name = "Nobile")
+
+source("discretion_word_cloud.R")
+```
+class: title-slide
+class: inverse
+class: middle
+
+# Discretion Mapping
+.bottom[.right[`r today() %>% format("%A, %B %m, %Y")`]]
+---
+```{r, wordcloud, include = TRUE, message=FALSE, echo =FALSE, error = FALSE, fig.align='center'}
+
+  wordcloud(discretion_words$word, discretion_words$n, min.freq = 5, random.order = FALSE,
+            random.color = FALSE, 
+            color = pro_colors_scheme2,
+            scale = c(3, 1 ))
+```
+---
+# what is core
+* Committee for Results on Equity
+
+--
+* From our efforts on Disproportionate Minority Contact
+
+--
+
+* Advises MOAT to ensure policy and program equity regardles identity, including:
+
+  + Racial
+  + Ethnic
+  + Gender
+  + Sexual
+  + Religious
+  
+## mapping
+* defined 
+* scope
+ + no assessment or evaluation
+---
+# Method: Three distinction sections
+* pre
+  + detention screening
+  + expidtior
+  
+* trial
+  + Adjudication
+  + Field
+  
+* supervision
+  + Field
+  + Clinical
+---
+—young mN of color traveling through probation
+—Data sources
+——p&p
+——interviews
+——review of forms
+---
+Next Step
+---
+Thank you
