@@ -34,23 +34,18 @@ class: middle
 # Discretion Mapping
 .bottom[.right[`r today() %>% format("%A, %B %m, %Y")`]]
 ---
-```{r, wordcloud, include = TRUE, message=FALSE, echo =FALSE, error = FALSE, fig.align='center'}
+# What Is Core
 
-  wordcloud(discretion_words$word, discretion_words$n, min.freq = 5, random.order = FALSE,
-            random.color = FALSE, 
-            color = pro_colors_scheme2,
-            scale = c(3, 1 ))
-```
----
-# what is core
 * Committee for Results on Equity
 
 --
+
 * From our efforts on Disproportionate Minority Contact
+
 
 --
 
-* Advises MOAT to ensure policy and program equity regardles identity, including:
+* Advises MOAT to ensure policy and program equity regardles of identity, including:
 
   + Racial
   + Ethnic
@@ -58,29 +53,59 @@ class: middle
   + Sexual
   + Religious
   
-## mapping
-* defined 
-* scope
- + no assessment or evaluation
 ---
-# Method: Three distinction sections
-* pre
-  + detention screening
-  + expidtior
-  
-* trial
+
+# The Mapping Project
+
+* Definition of Discretion: 
+  + Discretion refers to the choices made by the officer when implementing
+    - policy
+    - practice
+    - or referring to a program. 
+
+* Scope
+
+ + Limited to Probation and Court Services
+ 
+ + Mapping areas of discretion, not measuring discretion
+ 
+ 
+---
+# Method: 
+## Three distinction sections
+
+* Pre-trial
+  + Detention Screening
+  + Expeditor
+
+* Trial/Hearing
   + Adjudication
   + Field
   
-* supervision
+* Services
   + Field
   + Clinical
 ---
-—young mN of color traveling through probation
-—Data sources
-——p&p
-——interviews
-——review of forms
+
+# Method: 
+## Through the System
+
+* Young man of color traveling through probation
+* Data sources
+  + Policies
+  + Forms
+  + Program Documentaion
+  + Interviews with DCPOs, SPOs, POs
+---
+
+# Exploring our notes
+```{r, wordcloud, include = TRUE, message=FALSE, echo =FALSE, error = FALSE, fig.align='center'}
+
+  wordcloud(discretion_words$word, discretion_words$n, min.freq = 5, random.order = FALSE,
+            random.color = FALSE, 
+            color = pro_colors_scheme2,
+            scale = c(3, 1 ))
+```
 ---
 Next Step
 ---
