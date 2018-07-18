@@ -1,7 +1,7 @@
-a, a > code {
-  color: rgb(249, 38, 114);
-  text-decoration: none;
+.remark-container{
+	background-color: #a5d3c1;
 }
+
 .footnote {
   position: absolute;
   bottom: 3em;
@@ -11,8 +11,8 @@ a, a > code {
 .remark-code-line-highlighted     { background-color: #ffff88; }
 
 .inverse {
-  background-color: #272822;
-  color: #d6d6d6;
+  background-color: #0e0705;
+  color: #0e0705;
   text-shadow: 0 0 20px #333;
 }
 .inverse h1, .inverse h2, .inverse h3 {

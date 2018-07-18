@@ -28,12 +28,29 @@ font_add_google(name = "Nobile")
 source("discretion_word_cloud.R")
 ```
 class: title-slide
-class: inverse
-class: middle
 
-# Discretion Mapping
-.center[<iframe width="560" height="315" src="https://www.youtube.com/embed/lJJT00wqlOo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>]
+.center[![:scale 50%](img/CORELogo.jpg)]
+## Discretion Mapping: Agenda
+
 .bottom[.right[`r today() %>% format("%A, %B %m, %Y")`]]
+--
+
+* What is Core
+
+--
+
+* What, How, Why, and Results of Discretion Mapping
+
+--
+
+* Results from the Project
+
+--
+
+* Next Steps
+  + Personal recommendation
+
+
 ---
 # What Is Core
 
@@ -52,6 +69,7 @@ class: middle
   + Gender
   + Sexual
   + Religious
+  + Ability
   
 ---
 # Equality vs Equity
@@ -71,7 +89,8 @@ class: middle
 
  + Limited to Probation and Court Services
  
- + Mapping areas of discretion, not measuring discretion
+ + Mapping areas of discretion
+  - Not measuring the impact of discretion
 ---
 
 # Discretion Mapping Team
@@ -81,10 +100,12 @@ class: middle
   + Three field officers
   
 * Started in February, 2017
+
 * Completed phase one Feburary 22, 2018
-  + When the executive summary was completed
+  + [When the executive summary was completed](https://www.dropbox.com/s/i9uelv05gz0u18e/Discretion_Mapping_Summary.pdf?dl=0)
 ---
-# Method: 
+
+# Method:
 ## Three distinction sections
 
 * Pre-trial
@@ -110,18 +131,47 @@ class: middle
   + Forms
   + Program Documentaion
   + Interviews with DCPOs, SPOs, POs
+  
+---
+class: center, middle
+# The Starting Point
+![scale: 100%](img/core_flow.png)
 ---
 class: middle
 
-# Exploring our Notes
+# Visualizing Our Notes
 ```{r, wordcloud, include = TRUE, message=FALSE, echo =FALSE, error = FALSE, fig.align='center', fig.cap = "Visiualization of the 9 pages discretion mapping notes."}
 
   wordcloud(discretion_words$word, discretion_words$n, min.freq = 5, random.order = FALSE,
             random.color = FALSE, 
             color = pro_colors_scheme2,
-            scale = c(4, 1 ))
+            scale = c(4, 2 ))
 ```
+
+
 ---
-Next Step
+# Results
+
+* Approximately 45 discretion points through the system
+  + Estimate stems from the ways discretion points can be measured
+  
+* Discretion points exist from detention screening to case termination
+
+* Including *Objective Measures*
 ---
-Thank you
+# Next Steps
+
+* Determine an aspect to focus on
+  + Pre-trial
+  + Trial/Hearing
+  + Services
+  
+* Clean Data
+  + Audit of sources and storage
+  + Follow best practices regarding 
+     - Open Data
+     - Data Science
+---
+.center[#Commit to a Year Long Project] 
+.center[![Samuel L Jackson as Nick Fury](img/discretion_mapping.gif)]
+
