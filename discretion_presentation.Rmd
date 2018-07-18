@@ -43,7 +43,6 @@ class: middle
 
 * From our efforts on Disproportionate Minority Contact
 
-
 --
 
 * Advises MOAT to ensure policy and program equity regardles of identity, including:
