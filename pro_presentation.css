@@ -13,10 +13,15 @@
 
 }
 */
-
-
+.remark-container{
+	background-color: #a5d3c1;
+}
+a, a > code {
+  color: #193993; /*default: rgb(249, 38, 114); || sets color of links */
+  text-decoration: underline; /* turns off background coloring of links */
+}
 .title-slide{
-	background-color: #9b9292;
+	inverse;
 	}
 
 
